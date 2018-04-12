@@ -5,7 +5,7 @@
 - Maven (+ commandes exécuter/déployer)
 
 - SGBDR MySQL
-- schema.sql (création de la base et des tables)
+- documents/filrouge_shema.sql (création de la base et des tables)
 - data.sql (obtention des données)
 
 #### Modifications nécessaires (Java : /Fil_Rouge/src/main/resources/application.properties)
