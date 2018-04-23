@@ -37,6 +37,7 @@ Via le fichier jar:
 #### Front
 1. Cloner le repo
 2. cd Fil_Rouge_Front
+3. cd FilRougeFront
 3. ```npm install```
 4. ```npm install -g @angular/cli```
 5. ```ng serve -o```
