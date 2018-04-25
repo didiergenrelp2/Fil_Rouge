@@ -133,9 +133,9 @@ public class ArmeController {
 	// INSERT INTO arme (`marque`, `modele`, `type`, `calibre`, `numero_serie`,
 	// `infos_complementaire`) VALUES ('Berretta', '93', 'Pistolet', '9mm',
 	// '1235TYU678', '');
-	@PostMapping(path = "/armes")
-	Arme ajouterArme(@Valid @RequestBody Arme arme) throws Exception {
-		return armeService.ajouterArme(arme);
+	@PostMapping(path = "/armes")	
+	public ResponseEntity<?> ajouterArme(@Valid @RequestBody Arme arme) throws Exception {
+		return ResponseEntity.status(HttpStatus.OK).body(null);
 	}
 
 	/**
