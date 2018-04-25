@@ -13,7 +13,9 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name = "arme")
+@Table(name = "arme", 
+uniqueConstraints=
+@UniqueConstraint(columnNames= {"marque", "modele", "numero_serie"})))
 public class Arme extends Objet {
 
 	@Size(max = 100)
