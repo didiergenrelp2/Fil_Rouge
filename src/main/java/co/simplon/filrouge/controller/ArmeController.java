@@ -135,7 +135,8 @@ public class ArmeController {
 	// '1235TYU678', '');
 	@PostMapping(path = "/armes")	
 	public ResponseEntity<?> ajouterArme(@Valid @RequestBody Arme arme) throws Exception {
-		return ResponseEntity.status(HttpStatus.OK).body(null);
+		Arme nouvelleArme = armeService.ajouterArme(arme);
+		return ResponseEntity.status(HttpStatus.OK).body(nouvelleArme);
 	}
 
 	/**
